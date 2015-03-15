@@ -77,3 +77,13 @@ h1, h2, h3, h4 {
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/*文章列表设计*/
+.pub-time{
+  font-weight: bold;
+}
