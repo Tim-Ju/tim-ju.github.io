@@ -59,8 +59,19 @@
       
 
       <div class="container">
+
         <div class="row">
-        {{ content }}
+          <div class="col-md-3">
+            <h3>Category</h3>
+            <ul class="list-group">
+              {% assign categories_list = site.categories %}  
+              {% include JB/categories_list %}
+            </ul>
+          </div>
+          <div class="col-md-9">
+            {{ content }}
+          </div>
+          
         </div>
       </div>
 
@@ -68,7 +79,7 @@
 
     <div id="footer">
       <div class="container">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+        <p>&copy; {{ site.time | date: '%Y' }} <a href="http://github.com/Tim-Ju">{{ site.author.name }}</a>
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
