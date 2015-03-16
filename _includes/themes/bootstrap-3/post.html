@@ -1,11 +1,11 @@
 <div class="page-header">
-  <h3>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h3>
+  <h3>{{ page.title }} {% if page.tagline %}<small>{{ page.date | date_to_long_string }}</small>{% endif %}</h3>
 </div>
 
 <div class="row post-full">
   <div class="col-xs-12">
     <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
+      <span>{{page.tagline}}</span>
     </div>
     <div class="content">
       {{ content }}
