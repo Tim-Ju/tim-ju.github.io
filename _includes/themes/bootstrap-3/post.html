@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+  <h3>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h3>
 </div>
 
 <div class="row post-full">
@@ -28,20 +28,20 @@
   {% endunless %}  
   
     <hr>
-    <ul class="pagination">
-    {% if page.previous %}
-      <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a></li>
-    {% else %}
-      <li class="prev disabled"><a>&larr; Previous</a></li>
-    {% endif %}
-      <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-    {% if page.next %}
-      <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a></li>
-    {% else %}
-      <li class="next disabled"><a>Next &rarr;</a>
-    {% endif %}
-    </ul>
-    <hr>
+      <ul class="pagination pull-right">
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a></li>
+      {% else %}
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+      {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a></li>
+      {% else %}
+        <li class="next disabled"><a>Next &rarr;</a>
+      {% endif %}
+      </ul>
+    <hr style="clear: both;">
     {% include JB/comments %}
   </div>
 </div>
