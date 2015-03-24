@@ -1,0 +1,21 @@
+.topmenu{
+	list-style: none;
+	float: right;
+}
+
+.topmenu:before, .topmenu:after{
+	display: table;
+	content: "";
+}
+
+.topmenu:after{
+	clear:both;
+}
+
+.topmenu li{
+	float: left;
+	position:relative;
+	display: block;
+	width: 80px;
+	height: 40px;
+}
