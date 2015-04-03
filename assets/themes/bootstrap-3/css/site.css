@@ -50,6 +50,16 @@
 	color: #fff;
 }
 
+#brand{
+	display: block;
+	float: left;
+	width: 200px;
+	height: 60px;
+	margin: 5px 0px;
+	background: url(../images/logo1.png) top left no-repeat;
+	text-indent: -9999px;
+}
+
 .wrapper{
 	margin: 0 auto;
 	min-width: 1020px;
