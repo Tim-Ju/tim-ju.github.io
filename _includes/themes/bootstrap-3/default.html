@@ -20,23 +20,8 @@
     
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ ASSET_PATH }}/css/site.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <!-- Update these with your own images
-      <link rel="shortcut icon" href="images/favicon.ico">
-      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    -->
-
-    <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
@@ -44,31 +29,35 @@
 
   <body>
     <div id="wrap">
-      <div class="container">
-        <div class="masthead">
-          <a href="http://tim-ju.github.io" class="top-logo-link">
-            <img src="/assets/themes/bootstrap-3/images/logo.png" class="top-logo" alt="Tim Ju's Blog" title="Tim Ju's Blog" />
-          </a>
-          <ul class="nav nav-pills pull-right top-nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
+      <div id="blog-nav">
+        <div class="wrapper">
+          <div class="row">
+            <div class="col3">
+              
+            </div>
+            <div class="col9 inner-left inner-right">
+              <nav>
+                <ul class="sub-menu ">
+                  {% assign pages_list = site.pages %}
+                  {% assign group = 'navigation' %}
+                  {% include JB/pages_list %}
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-      
 
-      <div class="container">
-
+      <div id="main" class="wrapper">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col3">
             <h3>Category</h3>
             <ul class="list-group">
               {% assign categories_list = site.categories %}  
               {% include JB/categories_list %}
             </ul>
           </div>
-          <div class="col-md-9">
+          <div class="col9">
             {{ content }}
           </div>
           
