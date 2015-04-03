@@ -52,7 +52,7 @@
 
 .wrapper{
 	margin: 0 auto;
-	min-height: 1020px;
+	min-width: 1020px;
 }
 
 .row{
@@ -83,7 +83,7 @@ html *[class*="col"]{
 
 
 #main{
-	padding: 30px 0 0 0;
+	padding: 70px 0 0 0;
 	opacity: 1;
 	background: #fff;
 }
