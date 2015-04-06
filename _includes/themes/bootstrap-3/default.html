@@ -54,14 +54,14 @@
 
       <div id="main" class="wrapper">
         <div class="row">
-          <div class="col3">
+          <div style="position: fixed;" class="col3">
             <h3>Category</h3>
             <ul class="list-group">
               {% assign categories_list = site.categories %}  
               {% include JB/categories_list %}
             </ul>
           </div>
-          <div class="col9">
+          <div style="margin-left: 290px;" class="col9">
             {{ content }}
           </div>
           
