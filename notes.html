@@ -1,0 +1,13 @@
+---
+layout: page
+title: Notes
+header: Notes
+group: navigation
+---
+{% include JB/setup %}
+
+<h2 id="note-ref">Notes</h2>
+<ul>
+    {% assign pages_list = site.categories.notes %}
+    {% include JB/pages_list %}
+</ul>

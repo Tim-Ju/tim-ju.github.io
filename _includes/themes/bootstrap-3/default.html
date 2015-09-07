@@ -19,8 +19,9 @@
     <link href="{{ ASSET_PATH }}/bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
     
     <!-- Custom styles -->
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ ASSET_PATH }}/css/site.css" rel="stylesheet" type="text/css">
+    <link href="{{ BASE_PATH }}/assets/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ BASE_PATH }}/assets/css/site.css" rel="stylesheet" type="text/css">
+    <link href="{{ BASE_PATH }}/assets/icomoon/style.css" rel="stylesheet" type="text/css">
 
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
@@ -33,10 +34,9 @@
         <div class="wrapper">
           <div class="row">
             <div class="col3">
-              <a href="/">
-                <span id="brand">
-                  
-                </span>
+              <a id="logo" href="/">
+                <span class="icon icon-diamond"></span>
+                <span class="brand"></span>
               </a>
             </div>
             <div class="col9 inner-left inner-right">
@@ -67,7 +67,6 @@
           
         </div>
       </div>
-
     </div>
 
     <div id="footer">
@@ -84,7 +83,7 @@
 
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="{{ BASE_PATH }}/assets/javascripts/jquery-2.1.4.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
