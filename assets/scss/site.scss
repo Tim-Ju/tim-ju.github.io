@@ -71,7 +71,7 @@
 #user-info{
   width: 225px;
   overflow: hidden;
-  padding: 225px 10px 10px 10px;
+  padding: 215px 10px 10px 10px;
   text-align: center;
   font-size: 12px;
   margin-top: 20px;
@@ -95,6 +95,11 @@
     -webkit-box-shadow: 0px 0px 10px 5px #ccc;
     -moz-box-shadow: 0px 0px 10px 5px #ccc;
     box-shadow: 0px 0px 10px 5px #ccc;
+  }
+  .name{
+    margin: 5px 0px;
+    padding: 0px;
+    color: #333;
   }
   .contact{
     padding: 0px 10px;
