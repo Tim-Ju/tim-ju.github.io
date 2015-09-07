@@ -17,11 +17,11 @@ module.exports = function(grunt){
                 livereload: true
             },
             compass: {
-                files: ['assets/scss/**/*.{scss,sass}'],
+                files: ['assets/scss/**/*.scss'],
                 tasks: ['compass:debug']
             },
             jekyll:{
-                files: ['**/*.html'],
+                files: ['_includes/**/*.html','_layouts/**/*.html','_posts/**/*.html','_assets/**/*.html'],
                 tasks: ['exec:build']
             }
         },
