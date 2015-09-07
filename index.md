@@ -6,10 +6,12 @@ tagline: Welcome
 {% include JB/setup %}
 
 <h3>Newest Blog</h3>
-<ul class="self-group">
-  {% for post in site.posts %}
-    <li class="self-group-item"><span class="pub-time">{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+  <div class="item">
+    <span class="date">{{ post.date | date_to_string }}</span>
+    <span class="dot icon-radio-unchecked"></span>
+    <span class="title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></span>
+  </div>
+{% endfor %}
 
 

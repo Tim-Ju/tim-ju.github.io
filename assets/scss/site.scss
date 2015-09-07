@@ -110,6 +110,49 @@
   }
 }
 
+.item{
+  height: 40px;
+  padding: 0px 10px;
+  position: relative;
+  span{
+    display: inline-block;
+    position: absolute;
+  }
+  .date{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    left: 0px;
+    top: 0px;
+  }
+  .dot{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    left: 100px;
+    top: 0px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    background: url(../images/double-line.png) center center no-repeat;
+    &.first{
+      background: url(../images/single-line.png) center bottom no-repeat;
+    }
+    &:hover{
+      color: #428bca;
+      text-shadow: 0px 0px 3px #428bca;
+      cursor: pointer;
+    }
+  }
+  .title{
+    height: 40px;
+    line-height: 40px;
+    left: 140px;
+    top: 0px;
+  }
+}
+
 .wrapper{
   margin: 0 auto;
   min-width: 1020px;
