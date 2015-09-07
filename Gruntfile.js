@@ -19,6 +19,10 @@ module.exports = function(grunt){
             compass: {
                 files: ['assets/scss/**/*.{scss,sass}'],
                 tasks: ['compass:debug']
+            },
+            jekyll:{
+                files: ['**/*.html'],
+                tasks: ['exec:build']
             }
         },
         compass: {
