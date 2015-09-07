@@ -51,55 +51,70 @@
 }
 
 /* line 49, ../scss/site.scss */
-#brand {
-  display: block;
-  float: left;
+#logo {
+  display: table;
+  font-size: 40px;
+  height: 60px;
+  line-height: 40px;
+  width: 240px;
+  overflow: hidden;
+}
+/* line 56, ../scss/site.scss */
+#logo span {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 60, ../scss/site.scss */
+#logo #brand {
   width: 200px;
   height: 60px;
-  margin: 5px 0px;
+  margin: 5px 5px;
   background: url(../images/logo1.png) top left no-repeat;
-  text-indent: -9999px;
+}
+/* line 66, ../scss/site.scss */
+#logo:hover {
+  text-decoration: none;
 }
 
-/* line 59, ../scss/site.scss */
+/* line 71, ../scss/site.scss */
 .wrapper {
   margin: 0 auto;
   min-width: 1020px;
 }
 
-/* line 64, ../scss/site.scss */
+/* line 76, ../scss/site.scss */
 .row {
   margin: 0 auto;
   width: 1020px;
 }
 
-/* line 69, ../scss/site.scss */
+/* line 81, ../scss/site.scss */
 html *[class*="col"] {
   margin: 0 15px;
   float: left;
 }
 
-/* line 74, ../scss/site.scss */
+/* line 86, ../scss/site.scss */
 .col3 {
   width: 225px;
 }
 
-/* line 78, ../scss/site.scss */
+/* line 90, ../scss/site.scss */
 .col9 {
   width: 735px;
 }
 
-/* line 82, ../scss/site.scss */
+/* line 94, ../scss/site.scss */
 .inner-right {
   margin-right: 0px !important;
 }
 
-/* line 86, ../scss/site.scss */
+/* line 98, ../scss/site.scss */
 .inner-left {
   margin-left: 0px !important;
 }
 
-/* line 91, ../scss/site.scss */
+/* line 103, ../scss/site.scss */
 #main {
   padding: 70px 0 0 0;
   opacity: 1;

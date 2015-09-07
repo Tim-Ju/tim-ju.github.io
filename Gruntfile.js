@@ -18,7 +18,7 @@ module.exports = function(grunt){
             },
             compass: {
                 files: ['assets/scss/**/*.scss'],
-                tasks: ['compass:debug']
+                tasks: ['compass:debug','copy']
             },
             jekyll:{
                 files: ['_includes/**/*.html','_layouts/**/*.html','_posts/**/*.html','_assets/**/*.html'],
@@ -35,6 +35,18 @@ module.exports = function(grunt){
                     httpGeneratedImagesPath: '/images',
                     generatedImagesDir: 'assets/images'
                 }
+            }
+        },
+        copy: {
+            release: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'assets',
+                        src: ['**/*'],
+                        dest: '_site/assets'
+                    }
+                ]
             }
         },
         exec: {
