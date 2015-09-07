@@ -200,17 +200,24 @@ html *[class*="col"] {
   width: 735px;
 }
 
-/* line 179, ../scss/site.scss */
+/* line 180, ../scss/site.scss */
+.tag_box .list-group-item {
+  padding: 0px;
+  border: none;
+  line-height: normal;
+}
+
+/* line 187, ../scss/site.scss */
 .inner-right {
   margin-right: 0px !important;
 }
 
-/* line 183, ../scss/site.scss */
+/* line 191, ../scss/site.scss */
 .inner-left {
   margin-left: 0px !important;
 }
 
-/* line 187, ../scss/site.scss */
+/* line 195, ../scss/site.scss */
 #main {
   padding: 70px 0 0 0;
   opacity: 1;

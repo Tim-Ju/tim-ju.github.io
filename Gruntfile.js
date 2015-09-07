@@ -17,7 +17,7 @@ module.exports = function(grunt){
                 livereload: true
             },
             compass: {
-                files: ['assets/scss/**/*.scss'],
+                files: ['assets/scss/**/*.{scss,css}'],
                 tasks: ['compass:debug','copy']
             },
             jekyll:{

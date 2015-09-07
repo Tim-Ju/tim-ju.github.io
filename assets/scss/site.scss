@@ -176,6 +176,14 @@ html *[class*="col"]{
   width: 735px;
 }
 
+.tag_box{
+  .list-group-item{
+    padding: 0px;
+    border:none;
+    line-height: normal;
+  }
+}
+
 .inner-right{
   margin-right: 0px !important;
 }
