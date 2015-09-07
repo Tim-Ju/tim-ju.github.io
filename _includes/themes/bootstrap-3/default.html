@@ -55,11 +55,27 @@
       <div id="main" class="wrapper">
         <div class="row">
           <div style="position: fixed;" class="col3">
-            <h3>Category</h3>
-            <ul class="list-group">
-              {% assign categories_list = site.categories %}  
-              {% include JB/categories_list %}
-            </ul>
+            <div id="user-info">
+              <span class="user"></span>
+              <p>And we should consider every day lost on which we have not danced at least once</p>
+              <div class="contact">
+                <span class="icon-github"></span>
+                <span><a href="https://github.com/Tim-Ju" target="_blank">https://github.com/Tim-Ju</a></span>
+              </div>
+              <div class="contact">
+                <span class="icon-mail5"></span>
+                <span>webartisan@yeah.net</span>
+              </div>
+              <div class="contact">
+                <span class="icon-location3"></span>
+                <span>Wuhan, Hubei</span>
+              </div>
+            </div>
+            <!--<h3>Category</h3>-->
+            <!--<ul class="list-group">-->
+              <!--{% assign categories_list = site.categories %}  -->
+              <!--{% include JB/categories_list %}-->
+            <!--</ul>-->
           </div>
           <div style="margin-left: 290px;" class="col9">
             {{ content }}
