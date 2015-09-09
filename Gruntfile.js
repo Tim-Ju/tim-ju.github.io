@@ -20,6 +20,10 @@ module.exports = function(grunt){
                 files: ['assets/scss/**/*.{scss,css}'],
                 tasks: ['compass:debug','copy']
             },
+            copy: {
+                files: ['assets/images/**/*.{png,jpeg,jpg,gif,svg}'],
+                tasks: ['copy']
+            },
             jekyll:{
                 files: ['_includes/**/*.html','_layouts/**/*.html','_posts/*.md','_assets/**/*.html','./*.{html,md}'],
                 tasks: ['exec:build']

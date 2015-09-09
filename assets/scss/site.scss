@@ -150,7 +150,26 @@
     line-height: 40px;
     left: 140px;
     top: 0px;
+    &.html{
+      background: url(../images/html.png) 0 center no-repeat;
+      text-indent: 56px;
+    }
+    &.css{
+      background: url(../images/css.png) 0 center no-repeat;
+      text-indent: 56px;
+    }
+    &.js{
+      background: url(../images/js.png) 0 center no-repeat;
+      text-indent: 56px;
+    }
+    a:hover{
+      text-decoration: none;
+    }
   }
+}
+
+li p{
+  text-indent: 0px;
 }
 
 .wrapper{
