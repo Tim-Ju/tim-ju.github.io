@@ -25,7 +25,10 @@
 
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link type="text/css" rel="stylesheet" href="{{ BASE_PATH }}/assets/javascripts/syntaxhighlighter/styles/shCoreDefault.css"/>
 
+    <link type="text/css" rel="stylesheet" href="{{ BASE_PATH }}/assets/pygments/perldoc.css">
+    <script src="{{ BASE_PATH}}/assets/javascripts/jquery-2.1.4.min.js"></script>
   </head>
 
   <body>
@@ -72,11 +75,6 @@
                 <span>Wuhan, Hubei</span>
               </div>
             </div>
-            <!--<h3>Category</h3>-->
-            <!--<ul class="list-group">-->
-              <!--{% assign categories_list = site.categories %}  -->
-              <!--{% include JB/categories_list %}-->
-            <!--</ul>-->
           </div>
           <div style="margin-left: 290px;" class="col9">
             {{ content }}
@@ -96,7 +94,6 @@
 
     {% include JB/analytics %}
 
-    <script src="{{ BASE_PATH}}/assets/javascripts/jquery-2.1.4.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

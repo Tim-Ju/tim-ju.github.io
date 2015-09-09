@@ -21,7 +21,7 @@ module.exports = function(grunt){
                 tasks: ['compass:debug','copy']
             },
             jekyll:{
-                files: ['_includes/**/*.html','_layouts/**/*.html','_posts/**/*.html','_assets/**/*.html','./*.{html,md}'],
+                files: ['_includes/**/*.html','_layouts/**/*.html','_posts/*.md','_assets/**/*.html','./*.{html,md}'],
                 tasks: ['exec:build']
             }
         },

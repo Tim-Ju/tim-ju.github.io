@@ -63,12 +63,12 @@
 #logo span {
   display: table-cell;
   vertical-align: middle;
+  padding-right: 10px;
 }
-/* line 60, ../scss/site.scss */
+/* line 61, ../scss/site.scss */
 #logo #brand {
   width: 200px;
   height: 60px;
-  margin: 5px 5px;
   background: url(../images/logo1.png) top left no-repeat;
 }
 /* line 66, ../scss/site.scss */
@@ -179,45 +179,50 @@
 }
 
 /* line 161, ../scss/site.scss */
+.lineno {
+  padding-right: 3px;
+}
+
+/* line 165, ../scss/site.scss */
 .row {
   margin: 0 auto;
   width: 1020px;
 }
 
-/* line 166, ../scss/site.scss */
+/* line 170, ../scss/site.scss */
 html *[class*="col"] {
   margin: 0 15px;
   float: left;
 }
 
-/* line 171, ../scss/site.scss */
+/* line 175, ../scss/site.scss */
 .col3 {
   width: 225px;
 }
 
-/* line 175, ../scss/site.scss */
+/* line 179, ../scss/site.scss */
 .col9 {
   width: 735px;
 }
 
-/* line 180, ../scss/site.scss */
+/* line 184, ../scss/site.scss */
 .tag_box .list-group-item {
   padding: 0px;
   border: none;
   line-height: normal;
 }
 
-/* line 187, ../scss/site.scss */
+/* line 191, ../scss/site.scss */
 .inner-right {
   margin-right: 0px !important;
 }
 
-/* line 191, ../scss/site.scss */
+/* line 195, ../scss/site.scss */
 .inner-left {
   margin-left: 0px !important;
 }
 
-/* line 195, ../scss/site.scss */
+/* line 199, ../scss/site.scss */
 #main {
   padding: 70px 0 0 0;
   opacity: 1;

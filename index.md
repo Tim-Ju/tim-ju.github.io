@@ -14,4 +14,10 @@ tagline: Welcome
   </div>
 {% endfor %}
 
+<script type="text/javascript">
+  $(function(){
+    $(".item")
+  });
+</script>
+
 

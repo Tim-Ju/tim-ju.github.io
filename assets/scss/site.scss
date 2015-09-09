@@ -56,11 +56,11 @@
   span{
     display: table-cell;
     vertical-align: middle;
+    padding-right: 10px;
   }
   #brand{
     width: 200px;
     height: 60px;
-    margin: 5px 5px;
     background: url(../images/logo1.png) top left no-repeat;
   }
   &:hover{
@@ -156,6 +156,10 @@
 .wrapper{
   margin: 0 auto;
   min-width: 1020px;
+}
+
+.lineno{
+  padding-right: 3px;
 }
 
 .row{
